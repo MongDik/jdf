@@ -4,7 +4,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mong.jdf</groupId>
-	<artifactId>jdf</artifactId>
+	<artifactId>jdf-parent</artifactId>
 	<packaging>pom</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jdf Site Parent</name>
@@ -15,7 +15,7 @@
 	<!-- -->
 	<modules>
 		<module>jdf-core</module>
-		<module>jdf-webapp</module>
+		<module>jdf</module>
 	</modules>
 
 	<properties>

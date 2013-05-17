@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mong.jdf</groupId>
-	<artifactId>jdf-webapp</artifactId>
+	<artifactId>jdf</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jdf-webapp Maven Webapp</name>
@@ -14,8 +14,13 @@
 			<version>4.10</version>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+		    <groupId>com.mong.jdf</groupId>
+		    <artifactId>jdf-core</artifactId>
+		    <version>${project.version}</version>
+		</dependency>
 	</dependencies>
 	<build>
-		<finalName>jdf-webapp</finalName>
+		<finalName>jdf</finalName>
 	</build>
 </project>
