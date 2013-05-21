@@ -19,6 +19,11 @@
 		    <artifactId>jdf-core</artifactId>
 		    <version>${project.version}</version>
 		</dependency>
+		<dependency>
+		    <groupId>com.mong.jdf</groupId>
+		    <artifactId>jdf-admin</artifactId>
+		    <version>${project.version}</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<finalName>jdf</finalName>

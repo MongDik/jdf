@@ -15,6 +15,7 @@
 	<!-- -->
 	<modules>
 		<module>jdf-core</module>
+		<module>jdf-admin</module>
 		<module>jdf</module>
 	</modules>
 
