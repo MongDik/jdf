@@ -21,6 +21,11 @@
 		</dependency>
 		<dependency>
 		    <groupId>com.mong.jdf</groupId>
+		    <artifactId>jdf-web</artifactId>
+		    <version>${project.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.mong.jdf</groupId>
 		    <artifactId>jdf-admin</artifactId>
 		    <version>${project.version}</version>
 		</dependency>
