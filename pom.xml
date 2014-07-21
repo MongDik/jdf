@@ -20,9 +20,28 @@
   	</modules>
 
 	<properties>
-
+		<junit.version>4.11</junit.version>
+		<spring.version>4.0.6.RELEASE</spring.version>
+		<mysql.version>5.1.31</mysql.version>
+		<mybatis.version>3.2.7</mybatis.version>
+		<mybatis-spring.version>1.2.2</mybatis-spring.version>
+		<cayenne.version>3.2M1</cayenne.version>
+		<shiro.version>1.2.3</shiro.version>
+		<logback.version>1.1.2</logback.version>
+		<derby.version>10.10.2.0</derby.version>
+		<jackson.version>1.9.13</jackson.version>
 	</properties>
 
+	<!-- Dependencies calculated by Bizfuse when running full-source plugin -->
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
 	<repositories>
 		<repository>
 			<releases>
@@ -72,15 +91,5 @@
 
 	<dependencyManagement>
 	</dependencyManagement>
-
-	<!-- Dependencies calculated by Bizfuse when running full-source plugin -->
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.10</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
 
 </project>

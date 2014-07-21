@@ -8,11 +8,13 @@
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.2.xsd
        http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd">  
       
-      
+    <context:component-scan base-package="com.mong.jdf.controller" />
+	<context:annotation-config />
+	<mvc:annotation-driven /> 
       
 <!--     对模型视图名称的解析，即在模型视图名称添加前后缀   -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"  
-        p:prefix="/" p:suffix=".jsp" />  
+        p:prefix="/module/" p:suffix=".jsp" />  
       
 <!--     处理Mutipart文件上次的bean   -->
 <!--     <bean id="multipartResolver"   -->
