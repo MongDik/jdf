@@ -27,6 +27,7 @@
 		<mybatis-spring.version>1.2.2</mybatis-spring.version>
 		<cayenne.version>3.2M1</cayenne.version>
 		<shiro.version>1.2.3</shiro.version>
+		<oauth2.version>1.0.0</oauth2.version>
 		<logback.version>1.1.2</logback.version>
 		<derby.version>10.10.2.0</derby.version>
 		<jackson.version>1.9.13</jackson.version>

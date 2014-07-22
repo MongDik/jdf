@@ -51,5 +51,17 @@
   			<artifactId>shiro-spring</artifactId>
   			<version>${shiro.version}</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.authzserver</artifactId>
+			<version>${oauth2.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.oltu.oauth2</groupId>
+			<artifactId>org.apache.oltu.oauth2.resourceserver</artifactId>
+			<version>${oauth2.version}</version>
+		</dependency>
+		
 	</dependencies>
 </project>
