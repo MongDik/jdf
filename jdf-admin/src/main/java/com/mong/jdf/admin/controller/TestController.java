@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.mong.jdf.admin.dao.StudentMapper;
-import com.mong.jdf.admin.model.StudentEntity;
+import com.mong.jdf.admin.model.Student;
 
 @Controller
 public class TestController {
@@ -25,7 +25,7 @@ public class TestController {
 
 	@RequestMapping(value = "index.action")
 	public void indexPage() {
-		StudentEntity entity = studentMapper.getStudent("10000013");
+		Student entity = studentMapper.getStudent("10000013");
 		System.out.println("name：" + entity.getStudentName());
 		System.out.println("123");
 	}

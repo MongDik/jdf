@@ -1,4 +1,4 @@
-package com.mong.jdf.shiro;
+package com.mong.jdf.security;
 
 import java.io.Serializable;
 

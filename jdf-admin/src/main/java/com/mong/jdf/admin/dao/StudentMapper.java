@@ -2,19 +2,19 @@ package com.mong.jdf.admin.dao;
 
 import java.util.List;
 
-import com.mong.jdf.admin.model.StudentEntity;
+import com.mong.jdf.admin.model.Student;
 
 public interface StudentMapper {
 
-	public StudentEntity getStudent(String studentID);  
+	public Student getStudent(String studentID);  
     
-    public StudentEntity getStudentAndClass(String studentID);  
+    public Student getStudentAndClass(String studentID);  
       
-    public List<StudentEntity> getStudentAll();  
+    public List<Student> getStudentAll();  
       
-    public void insertStudent(StudentEntity entity);  
+    public void insertStudent(Student entity);  
       
-    public void deleteStudent(StudentEntity entity);  
+    public void deleteStudent(Student entity);  
       
-    public void updateStudent(StudentEntity entity);  
+    public void updateStudent(Student entity);  
 }

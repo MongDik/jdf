@@ -33,7 +33,7 @@
 	<bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
 
 	<!--myRealm 继承自AuthorizingRealm -->
-	<bean id="myRealm" class="com.mong.jdf.shiro.ShiroDBRealm"></bean>
+	<bean id="myRealm" class="com.mong.jdf.security.ShiroDBRealm"></bean>
 
 <!-- 	<bean -->
 <!-- 		class="org.springframework.beans.factory.config.MethodInvokingFactoryBean"> -->
