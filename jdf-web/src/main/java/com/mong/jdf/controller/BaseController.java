@@ -4,6 +4,8 @@
  */
 package com.mong.jdf.controller;
 
-public class AbstractController {
+import com.mong.jdf.web.AbstractService;
+
+public class BaseController extends AbstractService{
 
 }

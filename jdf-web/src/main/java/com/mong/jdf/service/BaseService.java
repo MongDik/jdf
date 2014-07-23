@@ -4,6 +4,8 @@
  */
 package com.mong.jdf.service;
 
-public class AbstractService {
+import com.mong.jdf.web.AbstractService;
+
+public class BaseService extends AbstractService{
 
 }
