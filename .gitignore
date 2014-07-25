@@ -4,3 +4,11 @@
 *.jar
 *.war
 *.ear
+
+*/.settings/*
+*/target/*
+*/.externalToolBuilders/*
+.classpath
+.project
+.pmd
+.eclipse-pmd
