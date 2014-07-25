@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="com.mong.jdf.admin.UserMapper">  
+  
+    <resultMap type="com.mong.jdf.admin.model.User" id="userMap">
+    </resultMap>  
+      
+    <!-- 查询学生，根据id -->  
+    <select id="getUser" parameterType="String" resultType="com.mong.jdf.admin.model.User">  
+    SELECT * from t_user 
+                WHERE username = #{username}  
+    </select>  
+    
+</mapper>  

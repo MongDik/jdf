@@ -3,7 +3,7 @@
     <title>Apache Shiro Spring-Hibernate Sample Application</title>
 </head>
 <body>
-   <form action="/jdf/login.action" method="post">
+   <form action="/jdf/app/test/login" method="post">
    name
    	<input type="text" name="username">
    password

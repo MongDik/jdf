@@ -16,10 +16,12 @@
 			<value>
 				/index.jsp = anon
 				/login.jsp = anon
-				/main.action = authc, roles[admin]
+				/app/test/login = anon
 				/course/** = authc, roles[admin]
 				/admin/** = authc,roles[admin]
             	/user/** = authc
+            	/s/** = authc
+            	/app/** = authc
 			</value>
 		</property>
 	</bean>
