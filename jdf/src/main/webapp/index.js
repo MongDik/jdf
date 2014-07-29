@@ -26,8 +26,7 @@ app.controller('UserListCtrl', ['$scope', '$http', function($scope, $http){
 }]);
 
 app.controller('UserDetailsCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
-    $scope.title = "User Page";
     $http.post($ctx + '/app/user/get', {id:$routeParams.userId }).success(function(response) {
-    	$scope.userList = response.data;
+    	$scope.user = response.data;
     });
 }]);
