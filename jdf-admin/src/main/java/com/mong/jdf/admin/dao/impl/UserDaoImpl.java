@@ -4,6 +4,8 @@
  */
 package com.mong.jdf.admin.dao.impl;
 
+import java.util.List;
+
 import org.springframework.stereotype.Repository;
 
 import com.mong.jdf.admin.dao.UserDao;
@@ -16,6 +18,11 @@ public class UserDaoImpl extends BaseDaoImpl implements UserDao{
     @Override
     public User getUser(String username) {
         return getSqlSession().selectOne("com.mong.jdf.admin.UserMapper.getUser", username);
+    }
+
+    @Override
+    public List<User> listAll() {
+        return getSqlSession().selectList("com.mong.jdf.admin.UserMapper.listUser");
     }
 
 }

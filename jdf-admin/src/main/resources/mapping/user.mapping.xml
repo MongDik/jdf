@@ -3,12 +3,20 @@
 <mapper namespace="com.mong.jdf.admin.UserMapper">  
   
     <resultMap type="com.mong.jdf.admin.model.User" id="userMap">
+    	<id column="id" property="id"/>
+    	<result column="fullname" property="fullname"/>
+    	<result column="username" property="username"/>
+    	<result column="password" property="password"/>
     </resultMap>  
       
     <!-- 查询学生，根据id -->  
     <select id="getUser" parameterType="String" resultType="com.mong.jdf.admin.model.User">  
     SELECT * from t_user 
                 WHERE username = #{username}  
+    </select>  
+    
+    <select id="listUser" resultMap="userMap">  
+    SELECT * from t_user 
     </select>  
     
 </mapper>  

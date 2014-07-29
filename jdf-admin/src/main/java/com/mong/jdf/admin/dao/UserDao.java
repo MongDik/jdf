@@ -4,11 +4,15 @@
  */
 package com.mong.jdf.admin.dao;
 
+import java.util.List;
+
 import com.mong.jdf.admin.model.User;
 import com.mong.jdf.dao.BaseDao;
 
 public interface UserDao extends BaseDao{
 
     User getUser(String string);
+
+    List<User> listAll();
 
 }

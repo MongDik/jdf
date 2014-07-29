@@ -14,14 +14,11 @@
 		<property name="unauthorizedUrl" value="/unauthorized.jsp" />
 		<property name="filterChainDefinitions">
 			<value>
-				/index.jsp = anon
+				/index.html = anon
 				/login.jsp = anon
 				/app/test/login = anon
-				/course/** = authc, roles[admin]
-				/admin/** = authc,roles[admin]
-            	/user/** = authc
             	/s/** = authc
-            	/app/** = authc
+            	/app/** = anon
 			</value>
 		</property>
 	</bean>

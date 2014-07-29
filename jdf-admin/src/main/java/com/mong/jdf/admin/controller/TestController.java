@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.mong.jdf.admin.dao.UserDao;
@@ -31,6 +32,12 @@ public class TestController extends BaseController{
 	    model.addAttribute("user", user);
 	    return new ModelAndView("admin/index", model);
 	}
+	
+	@ResponseBody
+	@RequestMapping(value = "test")
+    public String test(){
+	    return "test";
+    }
 
 //	@RequestMapping(value = "index.action")
 //	public void indexPage() {
