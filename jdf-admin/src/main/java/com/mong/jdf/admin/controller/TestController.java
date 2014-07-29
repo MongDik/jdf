@@ -47,35 +47,4 @@ public class TestController extends BaseController{
 //	}
 //	
 //	
-	@RequestMapping(value = "login")
-	public ModelAndView login(
-			@RequestParam(value = "username", required = false) String username,
-			@RequestParam(value = "password", required = false) String password) {
-		Subject subject = SecurityUtils.getSubject();
-        
-//        String username=request.getParameter("username");
-//        String password=request.getParameter("password");
-        UsernamePasswordToken token=new UsernamePasswordToken();
-        
-        token.setUsername(username);
-        token.setPassword(password.toCharArray());
-        try{
-            subject.login(token);
-        }
-        catch (IncorrectCredentialsException ice) {
-            ice.printStackTrace();
-        } 
-        catch (LockedAccountException lae) {
-            lae.printStackTrace();
-        }
-        catch(Exception e){
-            e.printStackTrace();
-            System.out.println("123");
-//            request.getRequestDispatcher("/login.jsp").forward(request, response);
-        }
-        //登陆成功，跳转主界面
-//        request.getRequestDispatcher("/index.jsp").forward(request, response);
-        System.out.println("success");
-        return new ModelAndView("redirect:index", null);
-	}
 }

@@ -6,7 +6,7 @@ app.config(['$routeProvider', function($routeProvider){
         }).when('/userList', {
             controller : 'UserListCtrl',
             templateUrl : 'module/admin/userList.html'
-        }).when("/userDetails", {
+        }).when("/userDetails:userId", {
         	controller : "UserDetailsCtrl",
         	templateUrl : "module/admin/userDetails.html"
         }).otherwise({
@@ -20,11 +20,14 @@ app.controller('RootCtrl', ['$scope', function($scope){
 
 app.controller('UserListCtrl', ['$scope', '$http', function($scope, $http){
     $scope.title = "用户列表";
-    $http.post('/jdf/app/user/list', {}).success(function(response) {
-    	$scope.userList = response;
+    $http.post($ctx + '/app/user/list', {}).success(function(response) {
+    	$scope.userList = response.data;
     });
 }]);
 
 app.controller('UserDetailsCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http){
     $scope.title = "User Page";
+    $http.post($ctx + '/app/user/get', {id:$routeParams.userId }).success(function(response) {
+    	$scope.userList = response.data;
+    });
 }]);
