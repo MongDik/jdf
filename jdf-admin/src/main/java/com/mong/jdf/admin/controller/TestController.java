@@ -1,7 +1,5 @@
 package com.mong.jdf.admin.controller;
 
-import javax.naming.AuthenticationException;
-
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.IncorrectCredentialsException;
 import org.apache.shiro.authc.LockedAccountException;
