@@ -8,7 +8,9 @@
 */.settings/*
 */target/*
 */.externalToolBuilders/*
+*/.checkstyle
 .classpath
 .project
 .pmd
 .eclipse-pmd
+
