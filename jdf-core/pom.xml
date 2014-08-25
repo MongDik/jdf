@@ -25,7 +25,23 @@
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
-		
+		<!-- commons -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>${commons-lang3.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-dbcp2</artifactId>
+			<version>${commons-dbcp2.version}</version>
+		</dependency>
+		<!-- Mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
 		<!-- Spring Dependency -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -82,7 +98,6 @@
 			<artifactId>spring-test</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-
 		<!-- Mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -94,30 +109,25 @@
 			<artifactId>mybatis-spring</artifactId>
 			<version>${mybatis-spring.version}</version>
 		</dependency>
+		<!-- logback -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>${logback.version}</version>
+		</dependency>
+		
 		<!-- Apache Cayenne -->
 		<dependency>
 			<groupId>org.apache.cayenne</groupId>
 			<artifactId>cayenne-server</artifactId>
 			<version>${cayenne.version}</version>
 		</dependency>
-		
+		<!-- derby -->
 		<dependency>
    			<groupId>org.apache.derby</groupId>
    			<artifactId>derby</artifactId>
    			<version>${derby.version}</version>
 		</dependency>
-
-		<!-- Mysql -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-			<version>${mysql.version}</version>
-		</dependency>
 		
-		<dependency>
-			<groupId>ch.qos.logback</groupId>
-			<artifactId>logback-classic</artifactId>
-			<version>${logback.version}</version>
-		</dependency>
 	</dependencies>
 </project>

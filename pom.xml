@@ -21,15 +21,19 @@
 
 	<properties>
 		<junit.version>4.11</junit.version>
+		<commons-lang3.version>3.3.2</commons-lang3.version>
+		<commons-dbcp2.version>2.0.1</commons-dbcp2.version>
+		<commons-lang3.version>3.3.2</commons-lang3.version>
+		<commons-dbcp2.version>2.0.1</commons-dbcp2.version>
 		<spring.version>4.0.6.RELEASE</spring.version>
-		<mysql.version>5.1.31</mysql.version>
 		<mybatis.version>3.2.7</mybatis.version>
 		<mybatis-spring.version>1.2.2</mybatis-spring.version>
+		<logback.version>1.1.2</logback.version>
 		<cayenne.version>3.2M1</cayenne.version>
 		<shiro.version>1.2.3</shiro.version>
 		<oauth2.version>1.0.0</oauth2.version>
-		<logback.version>1.1.2</logback.version>
 		<derby.version>10.10.2.0</derby.version>
+		<sitemesh.version>3.0.0</sitemesh.version>
 		<jackson.version>1.9.13</jackson.version>
 	</properties>
 
