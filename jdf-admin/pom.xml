@@ -26,12 +26,12 @@
 		</dependency>
 		<dependency>
 			<groupId>com.mong.jdf</groupId>
-			<artifactId>jdf-core</artifactId>
+			<artifactId>jdf-web</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>com.mong.jdf</groupId>
-			<artifactId>jdf-web</artifactId>
+			<artifactId>jdf-core</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>  
