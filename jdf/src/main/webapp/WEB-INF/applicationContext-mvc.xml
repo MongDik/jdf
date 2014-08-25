@@ -14,5 +14,7 @@
 			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/module/" />
 		<property name="suffix" value=".jsp" />
-	</bean>          
+	</bean>      
+	<context:annotation-config />
+	<mvc:annotation-driven />    
 </beans>  
