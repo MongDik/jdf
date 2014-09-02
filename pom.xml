@@ -16,6 +16,7 @@
 		<module>jdf-core</module>
 		<module>jdf-web</module>
 		<module>jdf-admin</module>
+		<module>jdf-vendor</module>
 		<module>jdf</module>
   	</modules>
 
