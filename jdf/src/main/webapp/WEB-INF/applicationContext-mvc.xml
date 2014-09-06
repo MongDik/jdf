@@ -14,7 +14,10 @@
 			value="org.springframework.web.servlet.view.JstlView" />
 		<property name="prefix" value="/module/" />
 		<property name="suffix" value=".jsp" />
-	</bean>      
+	</bean>    
+	<!-- 注解请求映射  -->
+	<mvc:annotation-driven  />  
 	<context:annotation-config />
-	<mvc:annotation-driven />    
+	<context:component-scan base-package="com.mong.jdf.admin.controller" />
+	 
 </beans>  

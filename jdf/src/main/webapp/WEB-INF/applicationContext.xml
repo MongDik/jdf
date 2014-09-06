@@ -35,11 +35,13 @@
   
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">  
     	<property name="dataSource" ref="dataSource" />
-    	<property name="mapperLocations" value="classpath*:/mapping/*Mapper.xml"/>
+    	<property name="mapperLocations" value="classpath*:/mapping/*.mapping.xml"/>
 	</bean>
 	<!-- ScanMapperFiles -->
   	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-    	<property name="basePackage" value="com.mong.jdf" />
+<!-- 		basePackage指定要扫描的包，在此包之下的映射器都会被搜索到。 -->
+<!-- 		可指定多个包，包与包之间用逗号或分号分隔 -->
+    	<property name="basePackage" value="com.mong.jdf.admin.mapper" />
     	<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
   	</bean>
 

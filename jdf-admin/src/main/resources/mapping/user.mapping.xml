@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>  
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
-<mapper namespace="com.mong.jdf.admin.UserMapper">  
-  
-    <resultMap type="com.mong.jdf.admin.model.User" id="userMap">
+<mapper namespace="com.mong.jdf.admin.mapper.UserMapper">  
+    <resultMap id="BaseMap" type="com.mong.jdf.admin.model.User">
     	<id column="id" property="id"/>
     	<result column="fullname" property="fullname"/>
     	<result column="username" property="username"/>
     	<result column="password" property="password"/>
     </resultMap>  
       
-    <!-- 查询学生，根据id -->  
-    <select id="getUser" parameterType="String" resultType="com.mong.jdf.admin.model.User">  
-    SELECT * from t_user 
+    <select id="getUser" parameterType="String" resultMap="BaseMap">  
+    	SELECT * from user 
                 WHERE username = #{username}  
     </select>  
     
-    <select id="listUser" resultMap="userMap">  
-    SELECT * from t_user 
-    </select>  
+    <select id="listUser" resultMap="BaseMap">  
+	    SELECT * from user 
+    </select>
     
 </mapper>  

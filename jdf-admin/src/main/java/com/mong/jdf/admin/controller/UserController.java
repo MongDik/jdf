@@ -29,7 +29,7 @@ import com.mong.jdf.controller.BaseController;
 import com.mong.jdf.utils.DataResponse;
 
 @Controller
-@RequestMapping("/user/*")
+@RequestMapping("/user/**")
 public class UserController extends BaseController{
 
     @Autowired
@@ -37,7 +37,9 @@ public class UserController extends BaseController{
     
     @ResponseBody
     @RequestMapping(value = "list")
-    public String list(){
+    public String list(
+    		@RequestParam(value="username", required=false)String username){
+    	System.out.println(username);
         DataResponse dataResponse = new DataResponse();
         List<User> list = userDao.listAll();
         dataResponse.setSuccess(true);
